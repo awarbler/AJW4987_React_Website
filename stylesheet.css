@@ -57,7 +57,7 @@ p { /* Tag selector */
 .header-inner { /* Header grid wrapper */
   max-width: var(--maxw); /* Match container width */
   margin: 0 auto; /* Center header content */
-  padding: 30px 26px; /* Top/bottom spacing (box model) */
+  padding: 22px 26px; /* Top/bottom spacing (box model) */
   display: grid; /* Grid for layout */
   grid-template-columns: auto 1fr; /* Fixed logo column, flexible nav column */
   align-items: center; /* Vertical alignment */
@@ -93,6 +93,26 @@ p { /* Tag selector */
   font-weight: 500; /* Weight */
 } /* End brand-mark */
 
+.site-title { /* “Z” in logo */
+  margin: 10px 0 6px 0; /* Space around title */
+  font-size: 34px; /* Large title size */
+  font-weight: 300; /* Bold title */
+  letter-spacing: 0,02em; /* Slight spacing for logo title */
+  color:var(--teal); /* Teal title color */
+  line-height: 1.15; /* Tighter line height for logo */
+} /* End site-title */
+
+.site-kicker { /* “ANITA WOODFORD” text */
+  margin: 0; /* No extra margin */
+  font-size: 20px; /* Small text size */
+  color: var(--ink); /* Same color as body text */
+} /* End site-kicker */
+
+.site-subtitle { /* “SOFTWARE ENGINEER” text */
+  margin: 0; /* No extra margin */
+  font-size: 14px; /* Small text size */
+  color: var(--muted); /* Muted color for subtitle */
+} /* End site-subtitle */
 .brand-text { /* “DESIGN” text */
   color: var(--teal); /* Light teal */
   letter-spacing: 0.28em; /* Spaced-out letters like screenshot */
@@ -377,6 +397,16 @@ p { /* Tag selector */
   color: var(--muted); /* Muted */
   font-size: 0.92rem; /* Slightly smaller */
 } /* End footer-small */
+
+.footer-name-link { /* Name link in copyright */
+  color: var(--teal-dark); /* Teal name */
+  text-decoration: none; /* No underline */
+} /* End name link */
+
+.footer-name-link:hover { /* Hover color change requirement */
+  color: var(--teal); /* Lighter teal on hover */
+  text-decoration: underline; /* Underline on hover */
+} /* End hover */
 
 
 
